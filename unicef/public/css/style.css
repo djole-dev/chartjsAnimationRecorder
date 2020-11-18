@@ -1,0 +1,438 @@
+body{
+
+background: #e0e0e0;
+}
+
+#myChart {
+  max-width: 1800px;
+  max-height: 1800px;
+  width: 600px;
+  height: 600px;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: inline;
+  width:20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.column3 {
+  float: left;
+  width: 33.33%;
+}
+
+.column4 {
+  float: left;
+  width: 33,33%;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.columnl {
+  float: left;
+  width: 60%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+ margin-right: 50px;
+}
+
+.columnr {
+  float: left;
+  width: 35%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
+}
+
+
+
+.column-right {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border: 0.5px solid #fafafa;
+  border-radius: 4px;
+  background:#fafafa;
+  box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.25);
+
+}
+
+.column-left {
+  padding-top: 0px;
+  
+}
+
+.text {
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-text {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+ 
+}
+
+input[type="button"] {
+  /*width: 100px;*/
+  background-color: #4caf50;
+  color: white;
+  padding: 7px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+.button-opt {
+  width: 45%;
+}
+
+#clearBtn {
+  background-color: #e90c0c;
+}
+
+
+.generateButton {
+  width: 45%;
+  background-color: #e90c0c;
+  color: white;
+  padding: 7px 10px;
+  margin: 8px 0;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.generateButton :hover {
+  background-color: #e90c0c;
+}
+
+#carrier {
+  width: 16%;
+  margin-right: 5px;
+}
+
+#logoBtnBackw{
+  width: 9%;
+  background-color: #4caf50;
+  color: white;
+  padding: 7px 10px;
+  margin: 8px 0;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#logoBtnForw{
+  width: 9%;
+  background-color: #4caf50;
+  color: white;
+  padding: 7px 10px;
+  margin: 8px 0;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-data-button {
+  width: 5%;
+  background-color: #00aeef;
+}
+.minusButton{
+  width: 5%;
+  background-color: #e90c0c;
+  color: white;
+  padding: 7px 10px;
+  margin: 8px 0;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.minusButton :hover {
+  background-color: #e90c0c;
+}
+
+input[type="text"],
+select {
+  /*width: 200px;*/
+  width: 100%;
+  padding: 4px 8px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.download-button-form {
+  margin: 0px;
+  padding: 0px;
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  margin-top: 10em;
+}
+#loader-cont {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.filepond--drop-label {
+  color: #4c4e53;
+}
+
+.filepond--label-action {
+  text-decoration-color: #babdc0;
+}
+9
+.filepond--panel-root {
+  background-color: #edf0f4;
+}
+
+
+.filepond--root {
+  width: 170px;
+  margin: 0 auto;
+}
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+
+/*----------------------------------*/
+
+/* The switch - the box around the slider */
+.switch2 {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch2 input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider2 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider2:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider2 {
+  background-color: #2196F3;
+}
+
+input:focus + .slider2 {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider2:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider2.round {
+  border-radius: 34px;
+}
+
+.slider2.round:before {
+  border-radius: 50%;
+}
+
+
+/*LOGIN PAGE*/
+
+.login-wrap{
+  width:405px;
+  overflow: hidden;
+  margin:auto;
+  margin-top: 180px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid silver;
+  border-radius: 4px;
+}
+
+.login-wrap h2{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.login-background{
+  background-color:  #00aeef ;
+}
+
+.center-logo{
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.login-wrap input{
+  font: small-caption;
+  font-size: 14px;
+  font-family: sans-serif;
+  width: 400px;
+  height: 35px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid silver;
+  padding: 5px;
+}
+
+
+.login-wrap input[type="password"] {
+  font: small-caption;
+  font-size: 14px;
+  font-family: sans-serif;
+  width: 388px; 
+  height: 23px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid silver;
+  padding: 5px;
+}
+
+.login-wrap .btn-login{
+  padding: 5px;
+  width: 400px;
+  height: 35px;
+  background-color:#00aeef;
+  color:#fff;
+  border: 0;
+  font-size: 18;
+  border-radius: 4px;
+
+}
+
+
