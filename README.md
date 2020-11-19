@@ -1,1 +1,3 @@
 # chartjsAnimationRecorder
+
+![](screenshots/loginPage.png)
